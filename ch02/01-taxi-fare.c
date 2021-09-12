@@ -1,5 +1,5 @@
 /*
- 
+
 PROBLEM
   write a program that calculates taxi fare
  
