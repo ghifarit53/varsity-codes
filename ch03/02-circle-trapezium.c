@@ -6,8 +6,8 @@ PROBLEM
   to write a complete C program from the following outline:
 
 ANALYSIS
-	there's not much to do because
-	the figure is hardcoded, so no input required
+  there's not much to do because
+  the figure is hardcoded, so no input required
 
 IMPLEMENTATION
 1. create a function for drawing circle and trapezium,
@@ -18,7 +18,7 @@ IMPLEMENTATION
 #include <stdio.h>
 
 void draw_circle(void) {
-	printf(
+  printf(
 "         , - - ,\n"
 "     , '         ' ,\n"
 "   ,                ,\n"
@@ -33,7 +33,7 @@ void draw_circle(void) {
 }
 
 void draw_trapezium(void) {
-	printf(
+  printf(
 "     _____________________\n"
 "    /                     \\\n"
 "   /                       \\\n"
@@ -43,8 +43,8 @@ void draw_trapezium(void) {
 }
 
 int main() {
-	draw_circle(); draw_trapezium();
-	printf("\n\n");
-	draw_circle(); draw_trapezium();
+  draw_circle(); draw_trapezium();
+  printf("\n\n");
+  draw_circle(); draw_trapezium();
   return 0;
 }

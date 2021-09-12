@@ -30,23 +30,23 @@ IMPLEMENTATION
 #include <stdio.h>
 
 int main() {
-	double hour, minute, time_in_hours, temperature;
+  double hour, minute, time_in_hours, temperature;
 
   // 1. get time from input
-	printf("Enter time (hh mm) => ");
-	scanf("%lf %lf", &hour, &minute);
+  printf("Enter time (hh mm) => ");
+  scanf("%lf %lf", &hour, &minute);
 
 
   // 2. if the input contains minute (ex: 2 30), convert it
   //   to floating point (ex: 2.5)
-	time_in_hours = hour + (minute / 60);
+  time_in_hours = hour + (minute / 60);
 
 
-	// 3. run the input through the provided formula
-	temperature = ((4 * time_in_hours * time_in_hours) / (time_in_hours + 2)) - 20;
+  // 3. run the input through the provided formula
+  temperature = ((4 * time_in_hours * time_in_hours) / (time_in_hours + 2)) - 20;
 
-	// 4. print the result out
-	printf("The temperature since a power failure is %.2lf°C\n", temperature);
+  // 4. print the result out
+  printf("The temperature since a power failure is %.2lf°C\n", temperature);
 
-	return 0;
+  return 0;
 }

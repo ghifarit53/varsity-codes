@@ -1,17 +1,17 @@
 /*
 
 PROBLEM
-	Write a program that calculates the acceleration (m/s²) of a jet fighter
-	launched from an aircraft-carrier catapult, given the jet’s takeoff speed in km/h
-	and the distance (meters) over which the catapult accelerates the jet from rest to takeoff.
+  Write a program that calculates the acceleration (m/s²) of a jet fighter
+  launched from an aircraft-carrier catapult, given the jet’s takeoff speed in km/h
+  and the distance (meters) over which the catapult accelerates the jet from rest to takeoff.
 
 INPUT
-	> takeoff speed (km/h)
-	> distance (m)
+  > takeoff speed (km/h)
+  > distance (m)
 
 OUTPUT
-	> acceleration (m/s²)
-	> time for the jet to be accelerated to takeoff speed (s)
+  > acceleration (m/s²)
+  > time for the jet to be accelerated to takeoff speed (s)
 
 RELEVANT FORMULA
 v = a × t
@@ -38,27 +38,27 @@ IMPLEMENTATION
 #include <stdio.h>
 
 int main() {
-	double speed_kmph, speed_mps, distance, acceleration, time;
+  double speed_kmph, speed_mps, distance, acceleration, time;
 
-	// 1. prompt user to enter speed (km/h) and distance (m)
-	printf("input speed (km/h) => ");
-	scanf("%lf", &speed_kmph);
+  // 1. prompt user to enter speed (km/h) and distance (m)
+  printf("input speed (km/h) => ");
+  scanf("%lf", &speed_kmph);
 
-	printf("input distance (m) => ");
-	scanf("%lf", &distance);
+  printf("input distance (m) => ");
+  scanf("%lf", &distance);
 
-	// 2. convert speed from (km/h) to (m/s)
-	speed_mps = speed_kmph * 1000 / 3600;
+  // 2. convert speed from (km/h) to (m/s)
+  speed_mps = speed_kmph * 1000 / 3600;
 
-	// 3. use the second formula to find time based on the distance and speed
-	time = 2 * distance / speed_mps;
+  // 3. use the second formula to find time based on the distance and speed
+  time = 2 * distance / speed_mps;
 
-	// 4. use the first formula to find acceleration
-	acceleration = speed_mps / time;
+  // 4. use the first formula to find acceleration
+  acceleration = speed_mps / time;
 
-	// 5. print both result to the stdout
-	printf("jet fighter acceleration is: %.2lf m/s²\n", acceleration);
-	printf("and the time it takes to accelerate to takeoff speed is: %.2lf second\n", time);
+  // 5. print both result to the stdout
+  printf("jet fighter acceleration is: %.2lf m/s²\n", acceleration);
+  printf("and the time it takes to accelerate to takeoff speed is: %.2lf second\n", time);
 
-	return 0;
+  return 0;
 }
