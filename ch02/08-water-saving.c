@@ -32,11 +32,6 @@ IMPLEMENTATION
 
 #include <stdio.h>
 
-#define NEW_TOILET_USAGE 2
-#define OLD_TOILET_USAGE 15
-#define INSTALLATION_COST 150
-#define AVG_USAGE_PER_DAY 14
-
 int main() {
 	const int new_toilet_usage = 2,
 						old_toilet_usage = 15,

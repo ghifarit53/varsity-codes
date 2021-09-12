@@ -28,7 +28,6 @@ IMPLEMENTATION
 */
 
 #include <stdio.h>
-#include <math.h>
 
 int main() {
 	double hour, minute, time_in_hours, temperature;
@@ -44,7 +43,7 @@ int main() {
 
 
 	// 3. run the input through the provided formula
-	temperature = ((4 * pow(time_in_hours, 2)) / (time_in_hours + 2)) - 20;
+	temperature = ((4 * time_in_hours * time_in_hours) / (time_in_hours + 2)) - 20;
 
 	// 4. print the result out
 	printf("The temperature since a power failure is %.2lf°C\n", temperature);

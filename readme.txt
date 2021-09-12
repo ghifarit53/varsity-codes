@@ -1,9 +1,10 @@
 # waht
 
-a repository to keep all my coding assignment, maybe
-you'll find/learn something useful here
+a repository to keep all my coding assignment from
+the 8th edition of "Problem Solving and Program Design in C"
+hope you'll find/learn something useful here
 
-# faq where
+# faq
 
-q: can i yoink the code
-a: sure, but don't make it too obvious, though i recommend not to
+q: yoink yes?
+a: sure but plz dont make it too obv
