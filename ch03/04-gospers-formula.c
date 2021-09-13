@@ -18,12 +18,12 @@ n! = n^n e^(-n)   / ( 2n + --- ) π
 
 IMPLEMENTATION
 1. define PI as constant
-2. create a function gopher() that requires integer n as its argument
+2. create a function gosper() that requires integer n as its argument
 3. plug n into the above formula, but first create intermediary variable
    to make debugging easier
 4. return the result
 5. create a main function and prompts the user to enter n
-6. call gopher() with n as the arguments
+6. call gosper() with n as the arguments
 7. print the result as requested
 
 */
@@ -34,8 +34,8 @@ IMPLEMENTATION
 // 1. define PI as constant
 #define PI 3.14159265
 
-// 2. create a function gopher() that requires integer n as its argument
-double gopher(int n) {
+// 2. create a function gosper() that requires integer n as its argument
+double gosper(int n) {
   // 3. plug n into the above formula, but first create intermediary variable
   //    to make debugging easier
   double inside_sqrt = 2 * (double)n + (1 / 3);
@@ -54,8 +54,8 @@ int main() {
   printf("Enter n > ");
   scanf("%d", &n);
 
-  // 6. call gopher() with n as the arguments
-  double n_factorial = gopher(n);
+  // 6. call gosper() with n as the arguments
+  double n_factorial = gosper(n);
 
   // 7. print the result as requested
   printf("%d! equals approximately %.5lf\n", n, n_factorial);
