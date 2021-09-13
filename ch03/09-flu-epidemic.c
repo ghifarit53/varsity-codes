@@ -8,9 +8,10 @@ PROBLEM
   Cases(x) = ------------------------
               1 + 39999 (e^-0.24681)
 
-However we can see that x is not being used anywhere in the formula, but after
-some testing, i can confidently say that x's location is in the e's power, so
-the above formula should become like this
+However we can see that x is not being used anywhere
+in the formula (i guess it's a typo), but after some testing,
+i can confidently say that x's location is in the e's power,
+so the above formula should become like the following:
 
                       40000
   Cases(x) = -------------------------
