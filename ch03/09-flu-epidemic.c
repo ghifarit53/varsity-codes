@@ -25,9 +25,6 @@ INPUT
 OUTPUT
   > cases predicted
 
-NOTES
-use the 'math.h' header to get euler's number
-
 IMPLEMENTATION
 1. define E as it's a constant
 2. create a function cases() that requires day as its arguments
