@@ -12,3 +12,7 @@ a: sure but plz dont make it too obv
 q: why makefile bad written fix plz >:(
 a: yea this is my first time writing makefile
    and i kinda dunno how to do anything
+
+also remember not to run any foreign code
+you found somewhere on the internet
+unless you know it's safe or be prepared to take the risk
