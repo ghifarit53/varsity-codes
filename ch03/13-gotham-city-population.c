@@ -30,15 +30,15 @@ IMPLEMENTATION
 
 // 1. create a function called 'population()' that requires year as its argument
 double population(int year) {
-  //2. create some constant for population rate, initial population,
-  //   and initial year
-  const double population_rate = 2.184,
-               initial_population = 52.966;
+  // 2. create some constant for population rate, initial population,
+  //    and initial year
+  const double population_rate = 2.184, initial_population = 52.966;
   const int initial_year = 1990;
   double current_population;
   int year_difference;
 
-  // 3. substract the year by initial year (1990) and use the result in the formula
+  // 3. substract the year by initial year (1990) and use the result in the
+  //    formula
   year_difference = year - initial_year;
   current_population = initial_population + (population_rate * year_difference);
 
@@ -55,7 +55,8 @@ int main() {
 
   // 7. call the population() function with the entered year
   // 8. finally, print out the result
-  printf("Predicted Gotham City population in %i (in thousands) is: %.3lf\n", year,population(year));
+  printf("Predicted Gotham City population in %i (in thousands) is: %.3lf\n",
+         year, population(year));
 
   return 0;
 }

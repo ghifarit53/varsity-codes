@@ -12,8 +12,8 @@ OUTPUT
 
 FORMULA
 
-    5_______
-    √ M / m
+    _______
+  ⁵√ M / m
 
 IMPLEMENTATION
 1. Write a function speeds_ratio that calculates this ratio for any maximum and
