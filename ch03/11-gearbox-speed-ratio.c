@@ -33,8 +33,9 @@ IMPLEMENTATION
 //    and minimum speeds
 double speeds_ratio(int max_speed, int min_speed) {
   double max_min = (double)(max_speed / min_speed);
-  // 2. because math.h has only sqrt() function and not root of five, we can use
-  //    pow() with the power as a fraction of five
+
+  // 2. because math.h has only sqrt() function and not root of five, we can
+  //    use pow() with the power as a fraction of five
   double ratio = pow(max_min, 1.0 / 5.0);
 
   return ratio;
@@ -55,6 +56,8 @@ int main() {
 
   // 5. displays the results in a sentence of the form
   printf("The ratio between successive speeds of a six-speed gearbox "
-         "with maximum speed %d rpm and minimum speed %d rpm is %2.lf\n",
+         "with maximum speed %d rpm and minimum speed %d rpm is %.2lf\n",
          max_speed, min_speed, ratio);
+
+  return 0;
 }
