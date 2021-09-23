@@ -13,7 +13,7 @@ a: well, actually I don't mind, but it's not recommended as you may
    understanding of the solutions I wrote. cheers!
 
 # ps
+
 - remember not to run any foreign code you found somewhere
-  on the internet unless you know it's safe or be prepared to take any risk
-- also I don't guarantee that all the solutions here are correct, so
-  if you find any mistake, you can open an issue
+  on the internet unless you know what are you doing
+- also I can't guarantee that all the solutions here are correct
