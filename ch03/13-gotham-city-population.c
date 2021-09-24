@@ -19,10 +19,10 @@ IMPLEMENTATION
 2. create some constant for population rate, initial population,
    and initial year
 3. substract the year by initial year (1990) and use the result in the formula
-5. return the result
-6. now create a main function that prompts user for year after 1990
-7. call the population() function with the entered year
-8. finally, print out the result
+4. return the result
+5. now create a main function that prompts user for year after 1990
+6. call the population() function with the entered year
+7. finally, print out the result
 
 */
 
@@ -42,19 +42,19 @@ double population(int year) {
   year_difference = year - initial_year;
   current_population = initial_population + (population_rate * year_difference);
 
-  // 5. return the result
+  // 4. return the result
   return current_population;
 }
 
-// 6. now create a main function that prompts user for year after 1990
+// 5. now create a main function that prompts user for year after 1990
 int main() {
   int year;
 
   printf("Enter a year after 1990> ");
   scanf("%d", &year);
 
-  // 7. call the population() function with the entered year
-  // 8. finally, print out the result
+  // 6. call the population() function with the entered year
+  // 7. finally, print out the result
   printf("Predicted Gotham City population in %i (in thousands) is: %.3lf\n",
          year, population(year));
 
