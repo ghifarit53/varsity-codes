@@ -85,11 +85,11 @@ int display_instruction() {
 
   printf("Double the loaf size? (y/n) ");
   scanf(" %c", &is_doubled_loaf_size);
-  is_doubled_loaf_size = (is_doubled_loaf_size == 121) ? 1 : 0;
+  is_doubled_loaf_size = (is_doubled_loaf_size == 'y') ? 1 : 0;
 
   printf("Use manual techniques for baking? (y/n) ");
   scanf(" %c", &is_manual_baking_technique);
-  is_manual_baking_technique = (is_manual_baking_technique == 121) ? 1 : 0;
+  is_manual_baking_technique = (is_manual_baking_technique == 'y') ? 1 : 0;
 
   int total_baking_time =
       baking_time(bread_type, is_doubled_loaf_size, is_manual_baking_technique);
