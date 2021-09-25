@@ -11,7 +11,7 @@ int main() {
   printf("Enter your weight (lb): ");
   scanf("%lf", &wt_lb);
 
-  printf("Enter your height: ");
+  printf("Enter your height (inch): ");
   scanf("%lf", &ht_in);
 
   double bmi = calculate_bmi(wt_lb, ht_in);
