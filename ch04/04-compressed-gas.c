@@ -6,29 +6,30 @@ int main() {
   printf("Enter color name: ");
   scanf(" %c", &color);
 
+  printf("Content");
   switch (color) {
   case 'O':
   case 'o':
-    printf("Content: Ammonia\n");
+    printf(": Ammonia\n");
     break;
 
   case 'B':
   case 'b':
-    printf("Content: Carbon monoxide\n");
+    printf(": Carbon monoxide\n");
     break;
 
   case 'Y':
   case 'y':
-    printf("Content: Hydrogen\n");
+    printf(": Hydrogen\n");
     break;
 
   case 'G':
   case 'g':
-    printf("Content: Oxygen\n");
+    printf(": Oxygen\n");
     break;
 
   default:
-    printf("Content unknown\n");
+    printf(" unknown\n");
     break;
   }
 
