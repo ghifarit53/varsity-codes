@@ -6,9 +6,9 @@ int within_x_percent(int ref, int data, int percent) {
 
   if (data >= lower_limit && data <= upper_limit) {
     return 1;
-  } else {
-    return 0;
   }
+
+  return 0;
 }
 
 int main() {
