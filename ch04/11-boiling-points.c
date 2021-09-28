@@ -23,29 +23,30 @@ int main() {
 
   int is_within_x_percent = within_x_percent(ref, data, percent);
 
+  printf("Substance");
   if (is_within_x_percent) {
     switch (ref) {
     case 100:
-      printf("Substance: Water\n");
+      printf(": Water\n");
       break;
     case 357:
-      printf("Substance: Mercury\n");
+      printf(": Mercury\n");
       break;
     case 1187:
-      printf("Substance: Copper\n");
+      printf(": Copper\n");
       break;
     case 2193:
-      printf("Substance: Silver\n");
+      printf(": Silver\n");
       break;
     case 2660:
-      printf("Substance: Gold\n");
+      printf(": Gold\n");
       break;
     default:
-      printf("Substance unknown\n");
+      printf(" unknown\n");
       break;
     }
   } else {
-    printf("Substance unknown\n");
+    printf(" unknown\n");
   }
 
   return 0;
