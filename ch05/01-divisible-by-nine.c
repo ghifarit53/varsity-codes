@@ -9,13 +9,7 @@ int is_divisible_by_nine(int num) {
     num /= 10;
   }
 
-  if (sum % 9 == 0 && num % 9 == 0) {
-    return 1;
-  } else {
-    return 0;
-  }
-
-  return 0;
+  return (sum % 9 == 0 && num % 9 == 0);
 }
 
 int main() {
