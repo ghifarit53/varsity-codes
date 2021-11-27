@@ -1,19 +1,17 @@
 ### what
 
-a repository to keep all my coding assignment from
-the 8th edition of "Problem Solving and Program Design in C"
-hope you'll find/learn something useful here
+A repository to keep all my coding assignment from
+the fundamental programming course in the 1st semester.
+This repository contains codes from the following source
 
-### faq
+- Fundamental Programming Practicum
+- Problem Solving and Program Design in C (8th edition)
 
-q: yoink yes?  
-a: well, actually I don't mind, but it's not recommended as you may
-   learn nothing, my best advice is to learn the code
-   and follow the logic. therefore you can build your own
-   understanding of the solutions I wrote. cheers!
+For the book, I can't guarantee the solutions will be correct because the problem
+itself is not quite descriptive in my opinion (like, some problems have
+input and output example but some others not).
 
-### ps
+### i have question
 
-- remember not to run any foreign code you found somewhere
-  on the internet unless you know what are you doing
-- also I can't guarantee that all the solutions here are correct
+Feel free to open a new issue and describe your question there, along with
+the corresponding URL to the source code. I will try my best to explain them to you.
