@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define nl printf("\n")
-
 int is_subarray(int arr1[], int arr2[], int len1, int len2) {
   int i = 0, j = 0;
 
