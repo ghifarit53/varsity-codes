@@ -84,71 +84,32 @@ int main() {
     char cmd[16];
     scanf("%s", cmd);
 
-    int valid_cmd, unknown_cmd = 1;
+    char *token = strtok(cmd, "|");
 
-    // ADD|X
-    valid_cmd = strstr(cmd, "ADD|") != NULL;
-    if (valid_cmd) {
-      char *token = strtok(cmd, "|");
+    if (strcmp(cmd, "ADD") == 0) { // ADD|X
       token = strtok(NULL, "|");
       int add = atoi(token);
-
-      if (strcmp(cmd, "ADD") == 0) {
-        unknown_cmd = 0;
-        for (int i = 0; i < add; i++) {
-          add_book(shelf, tracker, &counter);
-        }
-        printf("Finish adding book(s).\n");
+      for (int i = 0; i < add; i++) {
+        add_book(shelf, tracker, &counter);
       }
-    }
-
-    // REMOVE|X
-    valid_cmd = strstr(cmd, "REMOVE|") != NULL;
-    if (valid_cmd) {
-
-      char *token = strtok(cmd, "|");
+      printf("Finish adding book(s).\n");
+    } else if (strcmp(cmd, "REMOVE") == 0) { // REMOVE|X
       token = strtok(NULL, "|");
       int rm = atoi(token);
 
-      if (strcmp(cmd, "REMOVE") == 0) {
-        unknown_cmd = 0;
-        for (int i = 0; i < rm; i++) {
-          remove_book(shelf, tracker, &counter);
-        }
-        printf("Finish removing book(s).\n");
+      for (int i = 0; i < rm; i++) {
+        remove_book(shelf, tracker, &counter);
       }
-    }
-
-    // READ
-    valid_cmd = strcmp(cmd, "READ") == 0;
-    if (valid_cmd) {
-      unknown_cmd = 0;
+      printf("Finish removing book(s).\n");
+    } else if (strcmp(cmd, "READ") == 0) { // READ
       read_shelf(shelf, tracker, &counter);
-    }
-
-    // BROWSE
-    valid_cmd = strcmp(cmd, "BROWSE") == 0;
-    if (valid_cmd) {
-      unknown_cmd = 0;
+    } else if (strcmp(cmd, "BROWSE") == 0) { // BROWSE
       browse_shelf(&counter);
-    }
-
-    // RESET
-    valid_cmd = strcmp(cmd, "RESET") == 0;
-    if (valid_cmd) {
-      unknown_cmd = 0;
+    } else if (strcmp(cmd, "RESET") == 0) { // RESET
       reset_shelf(shelf, tracker, &counter);
-    }
-
-    // EXIT
-    valid_cmd = strcmp(cmd, "EXIT") == 0;
-    if (valid_cmd) {
-      unknown_cmd = 0;
+    } else if (strcmp(cmd, "EXIT") == 0) { // EXIT
       break;
-    }
-
-    // UNKNOWN COMMAND
-    if (unknown_cmd) {
+    } else {
       printf("UNKNOWN COMMAND\n");
     }
   }
