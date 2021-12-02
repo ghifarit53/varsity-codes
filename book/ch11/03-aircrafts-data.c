@@ -28,7 +28,7 @@ int redo_search() {
   scanf("%c", &c);
 
   // to be saved to the breaker variable
-  return (c == 'n' ? 0 : 1);
+  return (c == 'y');
 }
 
 void display_aircraft_data(aircraft_t aircrafts[], int i) {
