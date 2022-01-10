@@ -9,9 +9,9 @@ This repository contains codes from the following source
 
 For the book, I can't guarantee the solutions will be correct because the problem
 itself is not quite descriptive in my opinion (like, some problems have
-input and output example but some others not).
+input and output example but some others are not).
 
 ## i have question about a particular code
 
-Feel free to open a new issue and describe your question there, along with
+Feel free to open a new discussion and describe your question there, along with
 the corresponding URL to the source code. I will try my best to explain them to you.
